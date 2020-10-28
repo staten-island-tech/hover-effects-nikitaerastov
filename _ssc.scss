@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+.ssc {
+  height: 20rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  padding: 5rem;
+}
+.ssc:hover {
+  border-radius: 25%;
+  filter: saturate(125%);
+  transform: scale(1.3);
+}

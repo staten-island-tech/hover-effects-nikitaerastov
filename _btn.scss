@@ -4,14 +4,15 @@
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: unset;
   padding: 1.5rem 4rem;
   background-color: color(red);
   margin: 1rem auto;
   font-size: 2rem;
-  border-radius: 10rem;
+  //border-radius: 10rem;
   transition: all 0.3s;
   position: relative;
+  border-style: ridge;
 }
 .btn-red {
   background-color: color(red);
@@ -23,8 +24,8 @@
 }
 .btn:hover {
   //transform: scale(1.25);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba($color: #000000, $alpha: 0.6);
+  transform: translate(-10px, 10px);
+  box-shadow: 20px 0 20px rgba($color: #000000, $alpha: 0.6);
 }
 .btn::after {
   content: "";
@@ -39,11 +40,11 @@
   transition: all 0.3s;
 }
 .btn:hover::after {
-  transform: scaleX(1.5) scaleY(1.6);
+  transform: translate(-1);
   opacity: 0;
 }
 .btn:active {
-  transform: translateY(-1px);
-  transform: scaleX(1.5) scaleY(1.6);
+  transform: translate(-1);
+  transform: scaleX(1.5) scaleY(1.5);
   box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
 }

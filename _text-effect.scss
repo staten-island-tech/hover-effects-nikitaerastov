@@ -1,0 +1,15 @@
+@import "_variables.scss";
+.text-effect {
+  background-image: url(media/gradient.jpg);
+  background-position: bottom 50%;
+  color: transparent;
+  font-size: 8rem;
+  background-clip: text;
+  font-style: oblique;
+  text-transform: uppercase;
+  transition: all 0.3s all;
+}
+.text-effect:hover {
+  transform: scale(0.5, 0.5);
+  letter-spacing: 3rem;
+}
