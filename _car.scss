@@ -1,0 +1,40 @@
+@import "_variables.scss";
+.car-parent {
+  width: 60rem;
+  height: 40rem;
+  padding-top: 10%;
+}
+.car-gallery {
+  margin: 3rem;
+  position: relative;
+}
+.car-photo {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  transition: all 0.1s;
+}
+.car-photo:hover {
+  transform: skew(15deg);
+  box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem dotted color(blue);
+  z-index: 2;
+  border-radius: 80%;
+}
+.car-gallery:hover .car-photo:not(:hover) {
+  transform: scale(0.66) skew(-10deg);
+  opacity: 0.5;
+}
+.car-photo-1 {
+  top: 10rem;
+  left: 15%;
+}
+.car-photo-2 {
+  top: 2rem;
+  right: 0;
+}
+.car-photo-3 {
+  top: -2rem;
+  left: 0;
+}

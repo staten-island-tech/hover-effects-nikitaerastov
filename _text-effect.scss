@@ -3,13 +3,13 @@
   background-image: url(media/gradient.jpg);
   background-position: bottom 50%;
   color: transparent;
-  font-size: 8rem;
+  font-size: 4rem;
   background-clip: text;
   font-style: oblique;
   text-transform: uppercase;
   transition: all 0.3s all;
 }
 .text-effect:hover {
-  transform: scale(0.5, 0.5);
+  transform: scale(2, 2);
   letter-spacing: 3rem;
 }
